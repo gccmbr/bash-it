@@ -88,7 +88,7 @@ ____brainy_bottom() {
 ##############
 
 ___brainy_prompt_user_info() {
-	color=$bold_blue
+	color=$bold_yellow
 	if [ "${THEME_SHOW_SUDO}" == "true" ]; then
 		if sudo -vn 1> /dev/null 2>&1; then
 			color=$bold_red
@@ -123,7 +123,7 @@ ___brainy_prompt_python() {
 	color=$bold_yellow
 	box="[|]"
 	info="$(python_version_prompt)"
-	printf "%s|%s|%s|%s" "${color}" "${info}" "${bold_blue}" "${box}"
+	printf "%s|%s|%s|%s" "${color}" "${info}" "${bold_yellow}" "${box}"
 }
 
 ___brainy_prompt_ruby() {
